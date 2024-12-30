@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Buttons
+    </ion-title>
+    <ion-nav-link routerDirection="root" routerLink="/inputs" routerLinkActive="active">
+      <ion-button>
+        Inputs
+      </ion-button>
+    </ion-nav-link>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button>BIG BUTTON</ion-button>
+  <ion-button expand="block">Block BUTTON</ion-button>
+  <ion-button expand="full">Full BUTTON</ion-button>
+  <ion-button fill="outline">Outline BUTTON</ion-button>
+  <ion-button expand="block" fill="outline">Outline and Block BUTTON</ion-button>
+  <ion-button fill="clear">Clear BUTTON</ion-button>
+  <ion-button shape="round">Round BUTTON</ion-button>
+
+  <ion-fab vertical="top" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="top" horizontal="start">
+    <ion-fab-button>
+      <ion-icon name="remove"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-button shape="round" size="large" color="secondary">
+    <ion-icon name="game-controller-outline" slot="start" ></ion-icon>
+    Icon BUTTON
+    <ion-icon name="game-controller" slot="end" color="dark" ></ion-icon>
+  </ion-button>
+</ion-content>
